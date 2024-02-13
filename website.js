@@ -11,8 +11,10 @@ const gifs = ["no.gif", "no2.gif", "happy.gif"];
 let yesClicked = false;
 let firstNo = true;
 
-noButton.style.top = clearButton.getBoundingClientRect().top + 'px';
-noButton.style.left = clearButton.getBoundingClientRect().left + 'px';
+window.addEventListener('load', function() {
+    noButton.style.top = clearButton.getBoundingClientRect().top + 'px';
+    noButton.style.left = clearButton.getBoundingClientRect().left + 'px';
+});
 
 let height = window.innerHeight;
 let width = window.innerWidth;
