@@ -1,0 +1,125 @@
+.main-screen {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.question {
+    font-family: Single Day;
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 600px;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.question-gif {
+    height: 350px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+button{
+    font-family: Single Day;
+    font-size: 120px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    width: 400px;
+    height: 200px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.yes-button {
+    background-color: rgb(200, 240, 180);
+    color: rgb(100, 130, 90);
+    transition-duration: .15s;
+}
+
+.yes-button:hover {
+    background-color: rgb(185, 225, 165);
+    color: rgb(85, 115, 75);
+}
+
+.yes-button:active {
+    background-color: rgb(160, 210, 150);
+    color: rgb(60, 100, 60);
+}
+
+.clear-button {
+    background-color: transparent;
+    box-shadow: none;
+    cursor: default;
+    border: transparent;
+}
+
+.all-screen {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+}
+
+.no-button {
+    background-color: rgb(240, 100, 80);
+    color: rgb(130, 50, 40);
+    position: absolute;
+    top: 10;
+    pointer-events: all;
+    transition-duration: .5s;
+}
+
+.no-button:hover {
+    background-color: rgb(225, 85, 75);
+    color: rgb(115, 35, 25);
+    transition-duration: .5s;
+    pointer-events: all;
+}
+
+.no-button:active {
+    background-color: rgb(210, 70, 60);
+    color: rgb(100, 20, 10);
+    transition-duration: .5s;
+    pointer-events: all;
+}
+
+.bottom-tag {
+    display: inline-block;
+    font-family: Single Day;
+    font-size: 15px;
+    position: absolute;
+    bottom: -15px;
+}
